@@ -5,20 +5,21 @@
     <title>Dimensión N+1</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body { margin: 0; overflow: hidden; }
-        canvas { display: block; }
+        body { margin: 0; overflow: hidden; } /* Elimina márgenes por defecto y esconde barras de desplazamiento */
+        canvas { display: block; } /* Asegura que el canvas ocupe todo el espacio disponible */
     </style>
 </head>
 <body>
+    <!-- Contenedor para mensajes de información al usuario -->
     <div id="info" style="position: absolute; top: 10px; width: 100%; text-align: center; color: #0f0; font-family: monospace;">
         Haz clic para comenzar
     </div>
     
-    <!-- Cargar Three.js (la versión principal) -->
+    <!-- Cargar Three.js y sus controles de forma clásica -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.125.0/build/three.min.js"></script>
-    <!-- Controles (mantener 0.125.0 por compatibilidad conocida) -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.125.0/examples/js/controls/PointerLockControls.js"></script>
-    <!-- Finalmente nuestro código -->
+    
+    <!-- Cargar el script principal de nuestra aplicación 3D -->
     <script src="main.js"></script>
 </body>
 </html> 
