@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dimensión N+1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <div id="info" style="position: absolute; top: 10px; width: 100%; text-align: center; color: #0f0; font-family: monospace;">
+        Haz clic para comenzar
+    </div>
+    
+    <!-- Cargar Three.js (la versión principal) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.125.0/build/three.min.js"></script>
+    <!-- Controles (mantener 0.125.0 por compatibilidad conocida) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.125.0/examples/js/controls/PointerLockControls.js"></script>
+    <!-- Finalmente nuestro código -->
+    <script src="main.js"></script>
+</body>
+</html> 
