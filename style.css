@@ -17,17 +17,35 @@ canvas {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.85);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 #instructions {
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 1.1em;
+    font-family: monospace;
+    color: #00ff00;
+    background: #000;
+    padding: 32px 32px 24px 32px;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 40px 0 0 40px;
+    min-width: 340px;
+    min-height: 220px;
     cursor: pointer;
-    padding: 20px;
-    background-color: rgba(0,0,0,0.7);
-    border-radius: 10px;
+}
+
+.type-cursor {
+    display: inline-block;
+    width: 1ch;
+    color: #00ff00;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
 } 
