@@ -11,4 +11,23 @@ canvas {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+#blocker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#instructions {
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
 } 

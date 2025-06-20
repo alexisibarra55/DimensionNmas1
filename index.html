@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Dimensión N+1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex³</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body { margin: 0; overflow: hidden; } /* Elimina márgenes por defecto y esconde barras de desplazamiento */
-        canvas { display: block; } /* Asegura que el canvas ocupe todo el espacio disponible */
-    </style>
 </head>
 <body>
-    <!-- Contenedor para mensajes de información al usuario -->
-    <div id="info" style="position: absolute; top: 10px; width: 100%; text-align: center; color: #0f0; font-family: monospace;">
-        Haz clic para comenzar
+    <div id="blocker">
+        <div id="instructions">
+            <span style="font-size:36px">Click to Play</span>
+            <br /><br />
+            Move: WASD<br/>
+            Up: SPACE<br/>
+            Down: L-CTRL<br/>
+            Look: MOUSE<br/>
+            Run: SHIFT<br/>
+            Turbo: Double-Tap SHIFT
+        </div>
     </div>
-    
-    <!-- Cargar Three.js y sus controles de forma clásica -->
-    <script src="https://cdn.jsdelivr.net/npm/three@0.125.0/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.125.0/examples/js/controls/PointerLockControls.js"></script>
-    
-    <!-- Cargar el script principal de nuestra aplicación 3D -->
-    <script src="main.js"></script>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+        }
+    }
+    </script>
+
+    <script type="module" src="main.js"></script>
 </body>
 </html> 
